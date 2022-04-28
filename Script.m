@@ -16,9 +16,9 @@ Rr = 0.767/2; %m
 alpha = 0;
 f = 0.01;
 I = 1.2; 
-v0 = 100*1000/(60*60); %m/s
+v0 = 90*1000/(60*60); %m/s
 x0 = 0; % m
-iceDistance = 10; %m
+iceDistance = 20; %m
 iceTime = 1.5; %s
 
 %% Controller
@@ -39,7 +39,7 @@ tire.dry = [15 2.2 1 0.97]; % Edited from Mathworks [B C D E]
 tire.ice = [6 2.5 0.1 1]; % Edited from Mathworks [B C D E]
 tire.radius = 0.767/2; % meters
 tire.inertia = 2.0; % kg*m^2
-tire.initial_velocity = 30; % rad/s
+tire.initial_velocity = 65.189; % rad/s
 
 
 %% Brake Parameters
@@ -64,7 +64,7 @@ engine.torque = 0;
 vehicle.mass = 1908;
 vehicle.af = 1;
 vehicle.cd = 0.3;
-vehicle.initial_velocity = 100; % m/s
+vehicle.initial_velocity = 90*1000/(60*60); % m/s
 
 
 
